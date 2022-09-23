@@ -103,7 +103,6 @@ class SportsWalking(Training):
         super().__init__(action, duration, weight)
         self.height = height
 
-
     def get_spent_calories(self) -> float:
         return (
             (
@@ -133,7 +132,7 @@ class Swimming(Training):
         self.count_pool = count_pool
 
     LEN_STEP: float = 1.38
-    COEFF_1:  float = 1.1
+    COEFF_1: float = 1.1
     COEFF_2: int = 2
 
     def get_mean_speed(self) -> float:
