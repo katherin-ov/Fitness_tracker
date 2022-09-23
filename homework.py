@@ -76,10 +76,9 @@ class Training:
 class Running(Training):
     """Тренировка: бег."""
 
-    COEFF_1 = 18
-    COEFF_2 = 20
-    training_type = "RUN"
-    MIN_IN_HOUR = 60
+    COEFF_1: int = 18
+    COEFF_2: int = 20
+    MIN_IN_HOUR: int = 60
 
     def get_spent_calories(self) -> float:
         return (
@@ -94,9 +93,9 @@ class Running(Training):
 class SportsWalking(Training):
     """Тренировка: спортивная ходьба."""
 
-    COEFF_1 = 0.035
-    COEFF_2 = 0.029
-    MIN_IN_HOUR = 60
+    COEFF_1: float = 0.035
+    COEFF_2: float = 0.029
+    MIN_IN_HOUR: int = 60
 
     def __init__(
         self, action: int, duration: float, weight: float, height: float
@@ -104,7 +103,6 @@ class SportsWalking(Training):
         super().__init__(action, duration, weight)
         self.height = height
 
-    training_type = "WLK"
 
     def get_spent_calories(self) -> float:
         return (
@@ -135,9 +133,8 @@ class Swimming(Training):
         self.count_pool = count_pool
 
     LEN_STEP: float = 1.38
-    COEFF_1 = 1.1
-    COEFF_2 = 2
-    training_type = "SWM"
+    COEFF_1:  float = 1.1
+    COEFF_2: int = 2
 
     def get_mean_speed(self) -> float:
         return (
