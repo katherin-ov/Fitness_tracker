@@ -1,5 +1,5 @@
 #  Модуль фитнес-трекера
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-black?style=for-the-badge&logo=Git&logoColor=white)
 
 Модуль фитнес-трекера, который определяет вид тренировки, рассчитывает её результат и выводит информационное сообщение о результате.
